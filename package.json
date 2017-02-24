@@ -1,10 +1,10 @@
 {
   "name": "node-weather-demo",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "a node demo for weather information",
   "main": "index.js",
-  "bin":{
-    "weather":"bin.js"
+  "bin": {
+    "weather": "bin.js"
   },
   "scripts": {
     "test": "weather"
@@ -14,5 +14,13 @@
     "information"
   ],
   "author": "babybear",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fm20115412/npm-weather-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fm20115412/npm-weather-demo/issues"
+  },
+  "homepage": "https://github.com/fm20115412/npm-weather-demo#readme"
 }

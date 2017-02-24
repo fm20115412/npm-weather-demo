@@ -21,12 +21,22 @@ http.get(apiName, (res) => {
     res.on('end', () => {
         try {
             let parsedData = JSON.parse(rawData);
-            // console.log(parsedData);
-            console.log(JSON.stringify(parsedData["results"][0]));
+            var weatherInfo=parsedData["results"][0];
+            // console.log(weatherInfo);
+            var weatherData=weatherInfo["weather_data"][0];
+            // console.log(weatherData);
+             var weatherAdvice=weatherInfo["index"][0];
+            // console.log(weatherAdvice);
+            console.log("您所在的城市：",weatherInfo["currentCity"]);
+            console.log("天气：",weatherData["weather"]);
+            console.log("风向：",weatherData["wind"]);
+            console.log("气温：",weatherData["temperature"]);
+            console.log("穿衣建议：",weatherAdvice["des"]);
+
         } catch (e) {
             console.log(e.message);
         }
     });
 }).on('error', (e) => {
-    console.log(`Got error: ${e.message}`);
+    console.log("Got error: ${e.message}");
 });

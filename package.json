@@ -1,0 +1,18 @@
+{
+  "name": "node-weather-demo",
+  "version": "1.0.0",
+  "description": "a node demo for weather information",
+  "main": "index.js",
+  "bin":{
+    "weather":"bin.js"
+  },
+  "scripts": {
+    "test": "weather"
+  },
+  "keywords": [
+    "weather",
+    "information"
+  ],
+  "author": "babybear",
+  "license": "ISC"
+}
